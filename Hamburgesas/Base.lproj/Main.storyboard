@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburgesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Nombre de país" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mv-5V-qPs">
+                                <rect key="frame" x="100" y="228" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de hamburgesa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJZ-SB-CE6">
+                                <rect key="frame" x="70" y="297" width="180" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-7N-0hr">
+                                <rect key="frame" x="60" y="134" width="200" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8td-p8-CtV"/>
+                                </constraints>
+                                <state key="normal" title="Quiero una hamburgesa!"/>
+                                <connections>
+                                    <action selector="quieroHamburgesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="hf2-WP-e1e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68235296010971069" green="0.92941182851791382" blue="0.92549026012420654" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Mv-5V-qPs" firstAttribute="top" secondItem="0Sm-7N-0hr" secondAttribute="bottom" constant="64" id="23y-3c-wle"/>
+                            <constraint firstItem="VJZ-SB-CE6" firstAttribute="top" secondItem="1Mv-5V-qPs" secondAttribute="bottom" constant="48" id="3VC-CW-UUc"/>
+                            <constraint firstItem="VJZ-SB-CE6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="B3Q-H5-LU4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VJZ-SB-CE6" secondAttribute="bottom" constant="230" id="E9T-3w-ggy"/>
+                            <constraint firstItem="0Sm-7N-0hr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="114" id="L8b-5t-fHl"/>
+                            <constraint firstItem="0Sm-7N-0hr" firstAttribute="centerX" secondItem="1Mv-5V-qPs" secondAttribute="centerX" id="Xtu-vR-aOl"/>
+                            <constraint firstItem="1Mv-5V-qPs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qww-Xs-KFf"/>
+                            <constraint firstItem="0Sm-7N-0hr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="tE2-ff-XDI"/>
+                            <constraint firstItem="VJZ-SB-CE6" firstAttribute="centerX" secondItem="1Mv-5V-qPs" secondAttribute="centerX" id="ubL-gl-bJU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nombreDeHamburgesa" destination="VJZ-SB-CE6" id="AVG-KV-UMn"/>
+                        <outlet property="nombreDePais" destination="1Mv-5V-qPs" id="uAG-1J-pRn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="346"/>
+        </scene>
+    </scenes>
+</document>
